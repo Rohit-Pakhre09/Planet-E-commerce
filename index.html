@@ -4,13 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planet</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="./index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Favicon -->
     <link rel="icon" href="./public/favicon.png" />
   </head>
-  <body class="bg-orange-200">
+  <body>
+    <!-- Headline -->
+    <main
+      class="container mx-auto p-3 align-middle justify-between hidden sm:flex"
+    >
+      <ul class="flex space-x-5 font-medium text-sm cursor-pointer">
+        <li
+          class="hover:text-blue-700 text-gray-500 transition-all duration-100 ease-in"
+        >
+          About Us
+        </li>
+        <li
+          class="hover:text-blue-700 text-gray-500 transition-all duration-100 ease-in"
+        >
+          Order Tracking
+        </li>
+        <li
+          class="hover:text-blue-700 text-gray-500 transition-all duration-100 ease-in"
+        >
+          Contact Us
+        </li>
+        <li
+          class="hover:text-blue-700 text-gray-500 transition-all duration-100 ease-in"
+        >
+          FAQs
+        </li>
+      </ul>
 
+      <section class="flex space-x-2">
+        <!-- Language -->
+        <section class="relative">
+          <button
+            id="language"
+            class="flex items-center space-x-0.5 cursor-pointer"
+          >
+            <span class="font-medium text-sm" id="langText">English</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-3 w-3 align-middle"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
 
+          <!-- Dropdown List -->
+          <section
+            id="langMenu"
+            class="absolute left-0 rounded-md mt-4 w-22 bg-gray-200 text-center flex-col items-center justify-center space-y-1 px-1 py-2 hidden"
+          >
+            <a
+              href="#"
+              onclick="languageChange('Hindi')"
+              class="hover:bg-gray-100 z-10 py-1 rounded-md text-sm font-medium px-4.5 text-center"
+              >Hindi</a
+            >
+            <a
+              href="#"
+              onclick="languageChange('Dutch')"
+              class="hover:bg-gray-100 z-10 py-1 rounded-md text-sm font-medium px-4.5 text-center"
+              >Dutch</a
+            >
+            <a
+              href="#"
+              onclick="languageChange('French')"
+              class="hover:bg-gray-100 z-10 py-1 rounded-md text-sm font-medium px-4.5 text-center"
+              >French</a
+            >
+          </section>
+        </section>
+
+        <!-- Currency -->
+        <section class="relative">
+          <button
+            id="currency"
+            class="flex items-center space-x-0.5 cursor-pointer"
+          >
+            <span class="font-medium text-sm" id="currencyText">USD</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-3 w-3 align-middle"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown List -->
+          <section
+            id="currencyMenu"
+            class="absolute left-0 rounded-md mt-4 w-17 bg-gray-200 text-center flex-col items-center justify-center space-y-1 px-1 py-2 hidden"
+          >
+            <a
+              href="#"
+              onclick="currencyChange('USD')"
+              class="hover:bg-gray-100 z-10 py-1 rounded-md text-sm font-medium px-4 text-center"
+              >USD</a
+            >
+            <a
+              href="#"
+              onclick="currencyChange('INR')"
+              class="hover:bg-gray-100 z-10 py-1 rounded-md text-sm font-medium px-4 text-center"
+              >INR</a
+            >
+            <a
+              href="#"
+              onclick="currencyChange('EUR')"
+              class="hover:bg-gray-100 z-10 py-1 rounded-md text-sm font-medium px-4 text-center"
+              >ERU</a
+            >
+          </section>
+        </section>
+      </section>
+    </main>
+    <hr class="hidden sm:block opacity-7" />
+ 
   </body>
 </html>
