@@ -29,6 +29,20 @@ function currencyChange(money) {
   currencyMenu.classList.add("hidden");
 }
 
+// Mobile Menu Toggle
+const mobileBtn = document.getElementById("mobileNavBtn");
+const sideBar = document.getElementById("sideBar");
+const closeBtn = document.getElementById("closeBtn");
+
+mobileBtn.addEventListener("click", () => {
+  sideBar.style.visibility = "visible";
+});
+
+closeBtn.addEventListener("click", () => {
+  sideBar.style.visibility = "hidden";
+});
+
+// Document Event Handler
 document.addEventListener("click", (e) => {
   if (!langBtn.contains(e.target) && !currencyBtn.contains(e.target)) {
     langMenu.classList.add("hidden");
