@@ -1,3 +1,4 @@
+// Language & Currency Changing
 const langBtn = document.getElementById("language");
 const currencyBtn = document.getElementById("currency");
 const langMenu = document.getElementById("langMenu");
