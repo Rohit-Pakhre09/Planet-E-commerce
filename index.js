@@ -8,14 +8,14 @@ const currencyText = document.getElementById("currencyText");
 langBtn.addEventListener("click", () => {
   if (langBtn) {
     langMenu.classList.toggle("hidden");
-    currencyMenu.classList.add('hidden')
+    currencyMenu.classList.add("hidden");
   }
 });
 
 currencyBtn.addEventListener("click", () => {
   if (currencyBtn) {
     currencyMenu.classList.toggle("hidden");
-    langMenu.classList.add('hidden')
+    langMenu.classList.add("hidden");
   }
 });
 
@@ -25,13 +25,13 @@ function languageChange(lang) {
 }
 
 function currencyChange(money) {
-    currencyText.textContent = money;
-    currencyMenu.classList.add('hidden')
+  currencyText.textContent = money;
+  currencyMenu.classList.add("hidden");
 }
 
 document.addEventListener("click", (e) => {
   if (!langBtn.contains(e.target) && !currencyBtn.contains(e.target)) {
     langMenu.classList.add("hidden");
-    currencyMenu.classList.add('hidden')
+    currencyMenu.classList.add("hidden");
   }
 });
