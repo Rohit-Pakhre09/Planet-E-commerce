@@ -22,7 +22,7 @@
     <main class="fixed top-0 left-0 w-full z-50 bg-white">
       <!-- Headline -->
       <main
-        class="container mx-auto p-3 align-middle justify-between hidden sm:flex"
+        class="lg:max-w-330 mx-auto p-3 align-middle justify-between hidden sm:flex"
       >
         <ul class="flex space-x-5 font-medium text-sm cursor-pointer">
           <li
@@ -74,7 +74,7 @@
             <!-- Dropdown List -->
             <section
               id="langMenu"
-              class="absolute left-0 rounded-md mt-4 w-22 bg-gray-200 text-center flex-col items-center justify-center space-y-1 px-1 py-2 hidden z-10"
+              class="absolute right-0 shadow-md rounded-md mt-4 w-22 bg-gray-200 text-center flex-col items-center justify-center space-y-1 px-1 py-2 hidden z-10"
             >
               <a
                 href="#"
@@ -123,7 +123,7 @@
             <!-- Dropdown List -->
             <section
               id="currencyMenu"
-              class="absolute left-0 rounded-md mt-4 w-17 bg-gray-200 text-center flex-col items-center justify-center space-y-1 px-1 py-2 hidden z-10"
+              class="absolute right-0 shadow-md rounded-md mt-4 w-17 bg-gray-200 text-center flex-col items-center justify-center space-y-1 px-1 py-2 hidden z-10"
             >
               <a
                 href="#"
@@ -152,7 +152,7 @@
       <!-- Navbar -->
       <main class="shadow-sm md:shadow-none">
         <section
-          class="container mx-auto m-w-full p-2 flex justify-between gap-4 items-center"
+          class="max-w-330 mx-auto m-w-full p-2 flex justify-between gap-4 items-center"
         >
           <!-- Image -->
           <div class="p-2 flex-shrink-0">
@@ -673,7 +673,7 @@
     <!-- Other Content -->
     <main class="pt-20 sm:pt-30 md:pt-35">
       <!-- Hero Section -->
-      <section class="h-[auto] w-full container mx-auto p-2">
+      <section class="h-[auto] max-w-330 container mx-auto p-5">
         <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-3">
           <!-- Left Side -->
           <div
@@ -681,16 +681,16 @@
           >
             <img
               src="./src/assets/left-promoImg.jpg"
-              class="w-full h-full object-fill"
+              class="w-full h-full object-fil"
               alt="Left Promo Img"
             />
             <p
-              class="absolute top-0 md:top-20 p-3 ps-10 text-[25px] capitalize font-bold md:text-[40px] cursor-pointer hover:text-blue-500"
+              class="absolute top-0 md:top-20 p-3 ps-10 text-[25px] capitalize font-bold md:text-[30px] lg:text-[40px] cursor-pointer hover:text-blue-500"
             >
               Mega Sale up to 50% <br />Off for all
             </p>
             <p
-              class="absolute top-25 md:top-50 text-xs md:text-[20px] ps-10 pt-4 text-gray-500"
+              class="absolute top-25 md:top-50 text-xs md:text-[15px] lg:text-[20px] ps-10 pt-4 text-gray-500"
             >
               Hurry! Our Mega Sale is live now. <br />
               Get a flat <span class="font-bold text-red-600">50% Off</span> on
@@ -700,7 +700,7 @@
             </p>
             <div class="ps-10 pt-4">
               <button
-                class="absolute top-47 md:top-85 h-8 md:h-12 w-30 md:w-45 text-xs md:text-lg rounded-md shadow-md cursor-pointer font-medium text-white bg-blue-600 hover:bg-blue-900"
+                class="absolute top-47 md:top-85 h-8 md:h-12 w-30 md:w-40 text-xs md:text-lg rounded-md shadow-md cursor-pointer font-medium text-white bg-blue-600 hover:bg-blue-900"
               >
                 Get the offer
               </button>
@@ -719,12 +719,12 @@
                   alt="Right Top Img"
                 />
                 <p
-                  class="absolute top-20 right-3 md:right-10 font-bold text-[30px] text-right cursor-pointer hover:text-blue-600"
+                  class="absolute top-20 right-3 md:right-2 lg:right-10 font-bold text-[30px] md:text-[20px] lg:text-[30px] text-right cursor-pointer hover:text-blue-600"
                 >
                   Summer Sale<br />Collection
                 </p>
                 <p
-                  class="absolute top-42 right-3 md:right-10 font-medium text-lg pe-1 text-gray-500 cursor-pointer hover:underline"
+                  class="absolute top-42 right-3 md:top-35 lg:top-42 md:right-2 lg:right-10 md:text-[15px] font-medium text-lg pe-1 text-gray-500 cursor-pointer hover:underline"
                 >
                   Discover Now
                 </p>
@@ -736,12 +736,12 @@
                   alt="Right Bottom Img"
                 />
                 <p
-                  class="absolute top-12 right-3 md:right-10 font-bold text-[30px] text-right cursor-pointer hover:text-blue-600"
+                  class="absolute top-20 right-3 md:right-2 lg:right-10 font-bold text-[30px] md:text-[20px] lg:text-[30px] text-right cursor-pointer hover:text-blue-600"
                 >
-                  Get 30% Off<br />On iPhone
+                  Get off 30%<br />on iPhone
                 </p>
                 <p
-                  class="absolute top-34 right-3 md:right-10 font-medium text-lg pe-1 text-gray-500 cursor-pointer hover:underline"
+                  class="absolute top-42 right-3 md:top-35 lg:top-42 md:right-2 lg:right-10 md:text-[15px] font-medium text-lg pe-1 text-gray-500 cursor-pointer hover:underline"
                 >
                   Discover Now
                 </p>
@@ -749,6 +749,28 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- After Slider Content -->
+      <section class="w-full bg-blue-100 mx-auto p-1 m-5">
+        <section class="max-w-4xl mx-auto p-6 my-10">
+          <!-- Title -->
+          <h2
+            class="text-xl uppercase md:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 text-center"
+          >
+            Explore Our Latest Clothing Collection
+          </h2>
+
+          <!-- Description -->
+          <p
+            class="text-sm md:text-base lg:text-lg text-gray-500 italic text-center max-w-1xl mx-auto"
+          >
+            Discover stylish outfits designed for comfort and confidence. From
+            everyday essentials to fashion-forward pieces, our latest collection
+            brings you timeless wardrobe staples with a fresh twist. Perfect for
+            any occasion, every look is crafted to reflect your personality.
+          </p>
+        </section>
       </section>
 
       <!-- Slider With the Text -->
@@ -1597,7 +1619,77 @@
         </div>
       </section>
 
-      
+      <!-- New Arrival Creative Collection -->
+      <section
+        class="md:max-w-330 lg:max-w-340 mx-auto p-10 sm:p-10 flex flex-col items-center justify-center gap-10 lg:flex-row lg:items-center lg:justify-between"
+      >
+        <!-- Info Section -->
+        <div>
+          <p class="text-2xl font-medium text-blue-600">Start From $50</p>
+          <p class="font-semibold text-4xl max-w-110 mt-10">
+            New Arrival From Creative Clock Collections.
+          </p>
+          <p class="text-gray-400 mt-5 max-w-220 text-justify">
+            Discover timeless elegance with our New Arrival from the Creative
+            Clock Collections, where every tick is a tribute to style and
+            craftsmanship. This exclusive collection showcases a variety of
+            clocks thoughtfully designed to elevate your interiors — whether
+            you're furnishing a modern apartment, a classic home, or a creative
+            workspace. Each clock is a blend of innovative design and precision
+            engineering, featuring premium materials, intricate details, and
+            standout aesthetics that make them more than just timekeepers —
+            they’re statement pieces. From minimalist wall clocks that bring a
+            sleek sophistication to bold, artistic designs that spark
+            conversation, our collection celebrates both function and flair.
+          </p>
+          <button
+            class="bg-blue-500 p-3 rounded-md shadow cursor-pointer hover:bg-blue-800 text-white mt-3"
+          >
+            View All Items
+          </button>
+        </div>
+
+        <!-- Image Section -->
+        <div>
+          <img src="./src/assets/clock.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Summer Collections -->
+      <section
+        class="md:max-w-330 lg:max-w-340 mx-auto p-10 sm:p-10 flex flex-col-reverse items-center justify-center gap-10 lg:flex-row lg:items-center lg:justify-between"
+      >
+        <!-- max-w-150 md:max-w-150 lg:container mx-auto p-2 mb-10 flex flex-col-reverse items-center justify-center gap-10 lg:flex-row lg:items-center lg:justify-between -->
+        <!-- Image Section -->
+        <div>
+          <img src="./src/assets/goggles.jpg" alt="" />
+        </div>
+
+        <!-- Info Section -->
+        <div>
+          <p class="text-2xl font-medium text-blue-600">Start From $49</p>
+          <p class="font-semibold text-4xl max-w-110 mt-10">
+            New Summer Collections For Man's Fashion.
+          </p>
+          <p class="text-gray-400 mt-5 max-w-220 text-justify">
+            Elevate your wardrobe with our New Summer Collections for Men's
+            Fashion, where style meets comfort in every stitch. This season, we
+            bring you a carefully curated selection of apparel that blends
+            modern trends with timeless elegance. From breathable cotton tees
+            and linen shirts to sharp chinos and tailored shorts, each piece is
+            designed to keep you cool during the heat while ensuring you look
+            effortlessly put together. Redefine your summer style with clothing
+            that not only looks good but feels great too. Whether it’s for
+            casual comfort or refined sophistication, our summer lineup ensures
+            you stay stylish and relaxed all season long.
+          </p>
+          <button
+            class="bg-blue-500 p-3 rounded-md shadow cursor-pointer hover:bg-blue-800 text-white mt-3"
+          >
+            View All Items
+          </button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
