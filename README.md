@@ -1,4 +1,4 @@
-# 🛍️ Tailwind E-Commerce Template
+# 🛍️ Tailwind E-Commerce
 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-blue?logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green)
