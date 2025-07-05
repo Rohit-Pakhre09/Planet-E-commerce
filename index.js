@@ -58,39 +58,33 @@ const nextBtn = document.getElementById("nextBtn");
 
 let scrollPosition = 0;
 
-// 1. Get card width including gap
 function getCardWidth() {
   const card = carousel.querySelector(".card");
   const gap = 20;
   return card.offsetWidth + gap;
 }
 
-// 2. Get max scrollable width
 function getMaxScroll() {
   return carousel.scrollWidth - carousel.offsetWidth;
 }
 
-// 3. Enable/disable buttons properly
 function updateButtons() {
   const maxScroll = getMaxScroll();
   prevBtn.disabled = scrollPosition <= 0;
-  nextBtn.disabled = scrollPosition >= maxScroll - 1; // -1 to handle minor pixel issues
+  nextBtn.disabled = scrollPosition >= maxScroll - 1; 
 }
 
-// 4. Move carousel by setting translateX
 function updateCarousel() {
   carousel.style.transform = `translateX(-${scrollPosition}px)`;
   updateButtons();
 }
 
-// 5. Prev click
 prevBtn.addEventListener("click", () => {
   const cardWidth = getCardWidth();
   scrollPosition = Math.max(0, scrollPosition - cardWidth);
   updateCarousel();
 });
 
-// 6. Next click
 nextBtn.addEventListener("click", () => {
   const cardWidth = getCardWidth();
   const maxScroll = getMaxScroll();
@@ -98,13 +92,11 @@ nextBtn.addEventListener("click", () => {
   updateCarousel();
 });
 
-// 7. On window resize, reset scroll
 window.addEventListener("resize", () => {
   scrollPosition = 0;
   updateCarousel();
 });
 
-// ✅ 8. Set to 0 and init on first load
 scrollPosition = 0;
 updateCarousel();
 
