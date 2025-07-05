@@ -7,6 +7,8 @@
 A fully responsive, modern e-commerce landing page built with **Tailwind CSS CLI** and lightweight **JavaScript**. This static template is ideal for product showcases, online shops, or portfolios. Built for speed, simplicity, and scalability — no frameworks or build tools required beyond the Tailwind CLI.
 
 <img src="./src/assets/Tailwind E-commerce.png" alt="E-commerce Preview">
+<b>🔗 Live Preview:</b> 
+<a href="https://planetwebstore.netlify.app/">https://planetwebstore.netlify.app/</a>
 
 ---
 
