@@ -8,7 +8,7 @@ A fully responsive, modern e-commerce landing page built with **Tailwind CSS CLI
 
 <img src="./src/assets/Tailwind E-commerce.png" alt="E-commerce Preview">
 <b>🔗 Live Preview:</b> 
-<a href="https://planetwebstore.netlify.app/">https://planetwebstore.netlify.app/</a>
+<a href="https://planetwebstore.netlify.app/" target="_blank">https://planetwebstore.netlify.app/</a>
 
 ---
 
