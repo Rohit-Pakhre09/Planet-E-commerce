@@ -156,11 +156,12 @@
         >
           <!-- Image -->
           <div class="p-2 flex-shrink-0">
-            <img
-              src="./src/assets/logo-primary.svg"
-              alt="logo"
-              class="flex-shrink-0 max-w-full object-fill h-auto block"
-            />
+            <a href="#"
+              ><img
+                src="./src/assets/logo-primary.svg"
+                alt="logo"
+                class="flex-shrink-0 max-w-full object-fill h-auto block"
+            /></a>
           </div>
 
           <!-- Desktop Nav List -->
@@ -1941,9 +1942,9 @@
       </section>
 
       <!-- Footer -->
-      <section class="p-10 mx-auto w-full lg:w-250 xl:w-320">
+      <section class=" mx-auto w-full lg:w-250 xl:w-320 pb-5">
         <div
-          class="flex flex-col lg:flex-row lg:justify-center lg:items-center mx-auto "
+          class="flex flex-col lg:flex-row lg:justify-between lg:items-center mx-auto"
         >
           <!-- 1 -->
           <div class="p-5 flex flex-col items-start gap-5">
@@ -2065,10 +2066,39 @@
           </div>
 
           <!-- Copyrights -->
-          <p class="text-center mt-10">© 2024 <b class="cursor-pointer hover:text-blue-600">TailGrids</b>. All Rights Reserved.</p>
-          <p class="text-center mt-3">Made by : <i class="font-medium cursor-pointer hover:text-emerald-500">Rohit Pakhre</i></p>
+          <p class="text-center mt-10">
+            © 2024 <b class="cursor-pointer hover:text-blue-600">TailGrids</b>.
+            All Rights Reserved.
+          </p>
+          <p class="text-center mt-3">
+            Made by :
+            <i class="font-medium cursor-pointer text-gray-500 hover:text-emerald-500"
+              >Rohit Pakhre</i
+            >
+          </p>
         </div>
       </section>
     </main>
+
+    <!-- Up Button -->
+    <section class="fixed right-3 bottom-5 z-50">
+      <button
+        class="bg-blue-500 p-3 rounded-full cursor-pointer opacity-0 invisible transition-opacity duration-700"
+        id="scrollToUp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="white"
+          class="size-6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </section>
   </body>
 </html>
