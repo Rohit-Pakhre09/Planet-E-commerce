@@ -107,3 +107,20 @@ window.addEventListener("resize", () => {
 // ✅ 8. Set to 0 and init on first load
 scrollPosition = 0;
 updateCarousel();
+
+// Scroll to up
+const scrollToUp = document.getElementById("scrollToUp");
+
+scrollToUp.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollToUp.classList.remove("opacity-0", "invisible");
+    scrollToUp.classList.add("opacity-100", "visible");
+  } else {
+    scrollToUp.classList.remove("opacity-100", "visible");
+    scrollToUp.classList.add("opacity-0", "invisible");
+  }
+});
